@@ -13,25 +13,34 @@ export default function Home() {
 
         <div className="home-socials">
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/jude-gill"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://www.instagram.com/yourprofile"
+            href="https://www.instagram.com/juderossgill"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagram />
           </a>
           <a
-            href="https://www.github.com/users/yourID"
+            href="https://github.com/gillj-ross"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
+          </a>
+        </div>
+
+        <div className="home-buttons">
+          <a href="#contact" className="btn">
+            Get in Touch
+          </a>
+          <a href="#projects" className="btn btn-outline">
+            View Projects
           </a>
         </div>
       </div>
