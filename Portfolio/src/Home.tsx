@@ -1,3 +1,9 @@
+/**
+ * File: Home.tsx
+ * Author: Jude Gill
+ * Date Edited: 1-10-2026
+ */
+
 import "./Home.css";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
@@ -5,7 +11,13 @@ export default function Home() {
   return (
     <section className="home">
       <div className="home-content">
-        <h1>Hi, I'm Jude Gill</h1>
+        <h1 className="intro-text">
+          {"Hi, I'm Jude Gill".split("").map((char, i) => (
+            <span key={i} style={{ animationDelay: `${i * 0.03}s` }}>
+              {char === " " ? "\u00A0" : char}
+            </span>
+          ))}
+        </h1>
 
         <div className="home-subtitle">
           <h2>Software Engineer</h2>

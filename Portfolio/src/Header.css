@@ -1,0 +1,59 @@
+/*
+    File: Header.css
+    Author: Jude Gill
+    Date Edited: 1-10-2026
+*/
+
+header {
+  width: 100%;
+  position: fixed;           
+  top: 0;
+  left: 0;
+  z-index: 100;                
+  padding: 1rem 4rem;
+  box-sizing: border-box;
+  
+  background-color: rgba(255, 255, 255, 0.85);  
+  backdrop-filter: blur(3px);                   
+  -webkit-backdrop-filter: blur(3px);          
+  
+  border-bottom: 1px solid #ccc;              
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left .brand a {
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header-nav a {
+  margin-left: 2rem;
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000; 
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header-nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
